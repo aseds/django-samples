@@ -5,7 +5,7 @@ $ python manage.py createsuperuser
 // the polls, Question, Choice, they're not there.
 // change admin.py to this:
 
-//---------------------admin.py-------------------//
+//---------------------polls/admin.py-------------------//
 
 from django.contrib import admin
 from polls.models imort Question, Choice
@@ -26,7 +26,7 @@ admin.site.register(Question)
 admin.site.register(Question)
 //with:
 
-//--------------------admin.py--------------------//
+//--------------------polls/admin.py--------------------//
 
 from django.contrib import admin
 from polls.models import Question
@@ -42,3 +42,23 @@ admin.site.register(Question, QuestionAdmin)
 // You’ll follow this pattern – create a model admin object,
 // then pass it as the second argument to admin.site.register() – any time you
 // need to change the admin options for an object.
+
+-------------------------------------------------------------------------------------------------------
+
+
+And speaking of forms with dozens of fields, you might want to split the form up into fieldsets:
+
+//------------------------polls/admin.py----------------------//
+from django.contrib import admin
+from polls.models import Question
+
+
+class QuestionAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None,               {'fields': ['question_text']}),
+        ('Date information', {'fields': ['pub_date']}),
+    ]
+
+admin.site.register(Question, QuestionAdmin)
+
+//----------------------------------------------------------------//
