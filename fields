@@ -1,7 +1,12 @@
 null = True
+  :: optional ::
   this is for the database level, this will allow a field to be null(nullable field)
   the 'Char' and 'DateTime' fields would not be null( "" for strings )
 
 blank = True
+  :: optional ::
   this has nothing to do with the DB itself. this means that a field is not required.
   if you want a field to not to be required, you should set both 'blank' and 'null' to 'True'
+
+max_length
+  :: required ::
