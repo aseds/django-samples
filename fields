@@ -9,4 +9,4 @@ blank = True
   if you want a field to not to be required, you should set both 'blank' and 'null' to 'True'
 
 max_length
-  :: required ::
+  :: required : for some fields ::
