@@ -9,3 +9,6 @@ timezones:
 
 django database api difference between "get" and "filter"
     https://google.com
+
+models and databases
+	https://docs.djangoproject.com/en/1.7/topics/db/
