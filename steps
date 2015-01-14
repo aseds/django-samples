@@ -1,0 +1,31 @@
+$ django-admin startproject PROJECT_NAME
+
+// we have some installed apps, some of them probably use a table of the database, so next command should be "migrate"
+// the migrate command will look into installed_apps and make the tables necessary for the apps.
+// (also it will have a look at the migrations came with them)
+$ python manage.py migrate
+
+$ python manage.py startapp APP_NAME
+
+// make your models in models.py (APP_NAME/models.py)
+// add APP_NAME to installed_apps in settings.py
+
+//the makemigrations command will make this file: APP_NAME/migrations/001_initial.py
+$ python manage.py makemigrations APP_NAME
+
+//----------------------------------------------------------------------
+// so you change your models in models.py
+// you makemigrations of the changes with:
+$ python manage.py makemigrations APP_NAME
+
+// then you apply those changes
+$ python mange.py migrate
+
+// the reason why these are seperated steps is: use of version control
+//----------------------------------------------------------------------
+
+// this will print the sql for 001
+$ python manage.py sqlmigrate
+
+// this command will checks for any problems in your project without making migrations or touching the database.
+$ python manage.py check
