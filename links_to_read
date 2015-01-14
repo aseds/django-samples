@@ -1,0 +1,5 @@
+Accessing related objects:                        https://docs.djangoproject.com/en/1.7/ref/models/relations/
+
+DataBase api reference(making queries):           https://docs.djangoproject.com/en/1.7/topics/db/queries/
+
+timezones:                                        https://docs.djangoproject.com/en/1.7/topics/i18n/timezones/
