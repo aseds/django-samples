@@ -29,3 +29,5 @@ $ python manage.py sqlmigrate
 
 // this command will checks for any problems in your project without making migrations or touching the database.
 $ python manage.py check
+
+$ python manage.py shell
