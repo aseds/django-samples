@@ -24,7 +24,7 @@ admin.site.register(Question)
 // change the order of the fields in the admin
 // Replace this line: 
 admin.site.register(Question)
-//with:
+// with this:
 
 //--------------------polls/admin.py--------------------//
 
