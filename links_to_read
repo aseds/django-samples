@@ -1,11 +1,11 @@
-Accessing related objects:                        
-                              https://docs.djangoproject.com/en/1.7/ref/models/relations/
+Accessing related objects:
+	https://docs.djangoproject.com/en/1.7/ref/models/relations/
 
 DataBase api reference(making queries):
-                              https://docs.djangoproject.com/en/1.7/topics/db/queries/
+	https://docs.djangoproject.com/en/1.7/topics/db/queries/
 
 timezones:                      
-                            https://docs.djangoproject.com/en/1.7/topics/i18n/timezones/
+    https://docs.djangoproject.com/en/1.7/topics/i18n/timezones/
 
 django database api difference between "get" and "filter"
-                            https://google.com
+    https://google.com
