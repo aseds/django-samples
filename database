@@ -1,0 +1,31 @@
+null = True
+  :: optional ::
+  this is for the database level, this will allow a field to be null(nullable field)
+  the 'Char' and 'DateTime' fields would not be null( "" for strings )
+
+blank = True
+  :: optional ::
+  this has nothing to do with the DB itself. this means that a field is not required.
+  if you want a field to not to be required, you should set both 'blank' and 'null' to 'True'
+
+max_length
+  :: required : for some fields ::
+
+
+name = models.CharField(max_length=200, blank=True)
+
+------------------------
+what's the difference between 'get' and 'filter' ??
+
+get: use it for a single unique object
+filter: when you want to get all objects that match your lookup parameters. 
+
+I don't know if you really need an example, it's quite easy:
+
+if you know it's one object that matches your query, use get. It will fail if it's more than one.
+otherwise use filter, which gives you a list of objects.
+To be more precise:
+
+MyTable.objects.get(id=x).whatever gives you the whatever property of your object
+MyTable.objects.filter(somecolumn=x) is not only usable as a list, but you can also query it again, something like MyTable.objects.filter(somecolumn=x).order_by('date').
+The reason is that it's not actually a list, but a query object. You can iterate through it like through a list: for obj in MyTable.objects.filter(somecolumn=x)
