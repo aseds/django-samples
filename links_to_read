@@ -18,3 +18,6 @@ models and databases
 
 django admin site
 	https://docs.djangoproject.com/en/1.7/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display
+
+Field Types
+	https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types
