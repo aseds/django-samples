@@ -7,9 +7,6 @@ DataBase api reference(making queries):
 timezones:                      
     https://docs.djangoproject.com/en/1.7/topics/i18n/timezones/
 
-django database api difference between "get" and "filter"
-    https://google.com
-
 newbie mistakes
 	https://code.djangoproject.com/wiki/NewbieMistakes
 	
