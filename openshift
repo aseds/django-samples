@@ -1,0 +1,14 @@
+OpenShift Client Tools (RHC) Setup Wizard
+ 
+This wizard will help you upload your SSH keys,
+set your application namespace, and check that
+other programs like Git are properly installed.
+ 
+If you have your own OpenShift server, you can
+specify it now. Just hit enter to use the
+server for OpenShift Online:
+openshift.redhat.com.
+Enter the server hostname:
+|openshift.redhat.com|
+
+// press enter, then enter your email then your password
